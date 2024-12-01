@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="card-header">
+    <h5 class="card-title">Detalles del Profesor</h5>
+  </div>
+  <div class="card-body">
+    <img [src]="profesorDetail.foto" alt="Foto del Profesor" class="img-fluid" />
+    <dl class="row">
+      <dt class="col-sm-6">Nombre:</dt>
+      <dd class="col-sm-6">{{ profesorDetail.nombre }} {{ profesorDetail.apellido }}</dd>
+      <dt class="col-sm-6">Calificación:</dt>
+      <dd class="col-sm-6">{{ profesorDetail.calificacion }}/5.0</dd>
+      <dt class="col-sm-6">Cobro por hora:</dt>
+      <dd class="col-sm-6">${{ profesorDetail.cobro }}</dd>
+      <dt class="col-sm-6">Correo:</dt>
+      <dd class="col-sm-6">{{ profesorDetail.correo }}</dd>
+      <dt class="col-sm-6">Formación:</dt>
+      <dd class="col-sm-6">{{ profesorDetail.formacion }}</dd>
+      <dt class="col-sm-6">Descripción:</dt>
+      <dd class="col-sm-6">{{ profesorDetail.descripcion }}</dd>
+      <dt class="col-sm-6">Modalidad:</dt>
+      <dd class="col-sm-6">{{ profesorDetail.presencial ? 'Presencial' : 'Virtual' }}</dd>
+    </dl>
+  </div>
+</div> 
